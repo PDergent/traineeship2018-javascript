@@ -1,5 +1,39 @@
 // TODO 1 create a Shape class (export default)
 
+export default class Shape {
+
+    constructor(color, x, y) {
+        this._color = color;
+        this._x = x;
+        this._y = y;
+    }
+
+    set color (color) { this._color = color }
+    get color () { return this._color }
+
+    set x (x) { this._x = x }
+    get x() { return _x }
+
+    set y(y) { this._y = y }
+    get y() { return this._y }
+
+
+    move(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    getColor() {
+        return this.color;
+    }
+
+    changeColor(color) {
+        this._color = color;
+    }
+}
+
+
+
 // TODO 2 add properties 'color', 'x' and 'y' to the shape class via the constructor
 
 // TODO 3 create a new file (src/rectangle.js) and create a Rectangle class
